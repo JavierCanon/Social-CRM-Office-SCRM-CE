@@ -1,0 +1,25 @@
+<browsers>
+  <!-- http://developer.apple.com/internet/safari/faq.html -->
+  <!-- sample UA "Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3" -->
+  <!-- 01/09/2008 Paul.  We do not get a match against parentID="Safari" because Safari1Plus is the last valid browser found to mach.  -->
+  <browser id="iPhone" parentID="Safari1Plus">
+    <identification>
+      <userAgent match="iPhone" />
+    </identification>
+
+    <capabilities>
+      <capability name="browser"             value="iPhone" />
+      <capability name="isMobileDevice"      value="true" />
+      <capability name="javascript"          value="true" />
+      <capability name="ecmascriptversion"   value="1.3" />
+      <capability name="supportsCss"         value="true" />
+      <capability name="frames"              value="true" />
+      <capability name="cookies"             value="true" />
+      <capability name="css2"                value="true" />
+      <capability name="javaapplets"         value="true" />
+      <capability name="tables"              value="true" />
+      <capability name="platform"            value="MacOSX" />
+      <capability name="mobileDeviceManufacturer" value="Apple" />
+    </capabilities>
+  </browser>
+</browsers>

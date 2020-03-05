@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A51D0454-4AFA-46DE-89D4-B03D37E1816C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ASC.Core.Common</RootNamespace>
+    <AssemblyName>ASC.Core.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <OutputPath>..\..\web\studio\ASC.Web.Studio\bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Autofac.4.8.1\lib\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.CloudFront">
+      <HintPath>..\..\packages\AWSSDK.CloudFront.3.3.10.10\lib\net45\AWSSDK.CloudFront.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core">
+      <HintPath>..\..\packages\AWSSDK.Core.3.3.29\lib\net45\AWSSDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.S3">
+      <HintPath>..\..\packages\AWSSDK.S3.3.3.26.2\lib\net45\AWSSDK.S3.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SimpleEmail">
+      <HintPath>..\..\packages\AWSSDK.SimpleEmail.3.3.7.2\lib\net45\AWSSDK.SimpleEmail.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\..\packages\BouncyCastle.1.8.2\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit">
+      <HintPath>..\..\packages\MailKit.2.0.4\lib\net45\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit">
+      <HintPath>..\..\packages\MimeKit.2.0.4\lib\net45\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\StackExchange.Redis.2.0.519\lib\net472\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis.Extensions.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\StackExchange.Redis.Extensions.Core.4.0.5\lib\net472\StackExchange.Redis.Extensions.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseCommonLinkUtility.cs" />
+    <Compile Include="Billing\BillingClient.cs" />
+    <Compile Include="Billing\CouponManager.cs" />
+    <Compile Include="Billing\ITariffSyncService.cs" />
+    <Compile Include="Billing\License\License.cs" />
+    <Compile Include="Billing\License\LicenseException.cs" />
+    <Compile Include="Billing\License\LicenseReader.cs" />
+    <Compile Include="Billing\TariffSyncClient.cs" />
+    <Compile Include="Billing\TariffSyncServiceSection.cs" />
+    <Compile Include="Billing\Invoice.cs" />
+    <Compile Include="Billing\PaymentInfo.cs" />
+    <Compile Include="Billing\PaymentActive.cs" />
+    <Compile Include="Billing\TariffService.cs" />
+    <Compile Include="Billing\Tariff.cs" />
+    <Compile Include="Billing\TariffState.cs" />
+    <Compile Include="Billing\TariffSyncService.cs" />
+    <Compile Include="Caching\AzRecordStore.cs" />
+    <Compile Include="Caching\CachedAzService.cs" />
+    <Compile Include="Caching\CachedQuotaService.cs" />
+    <Compile Include="Caching\CachedSubscriptionService.cs" />
+    <Compile Include="Caching\ICachedService.cs" />
+    <Compile Include="Caching\TrustInterval.cs" />
+    <Compile Include="Caching\UserGroupRefStore.cs" />
+    <Compile Include="Configuration\AmazonS3Settings.cs" />
+    <Compile Include="Configuration\ConnectionStringNameTypeConverter.cs" />
+    <Compile Include="Configuration\AmiPublicDnsSyncService.cs" />
+    <Compile Include="Billing\ITariffService.cs" />
+    <Compile Include="Configuration\Consumer.cs" />
+    <Compile Include="Configuration\ConsumerConfigurationSection.cs" />
+    <Compile Include="Context\Impl\AuthManager.cs" />
+    <Compile Include="Context\Impl\AuthorizationManager.cs" />
+    <Compile Include="Context\Impl\CoreConfiguration.cs" />
+    <Compile Include="Context\Impl\PaymentManager.cs" />
+    <Compile Include="Context\Impl\SubscriptionManager.cs" />
+    <Compile Include="Context\Impl\TenantManager.cs" />
+    <Compile Include="Context\Impl\UserManager.cs" />
+    <Compile Include="Contracts\BackupServiceClient.cs" />
+    <Compile Include="Contracts\BackupServiceModel.cs" />
+    <Compile Include="Contracts\IBackupService.cs" />
+    <Compile Include="Core\AzRecord.cs" />
+    <Compile Include="Core\Partner.cs" />
+    <Compile Include="Core\PartnerDisplayType.cs" />
+    <Compile Include="Core\PartnerPaymentMethod.cs" />
+    <Compile Include="Core\PartnerStatus.cs" />
+    <Compile Include="Core\PartnerType.cs" />
+    <Compile Include="Core\DBResourceManager.cs" />
+    <Compile Include="Data\DbSettingsManager.cs" />
+    <Compile Include="MultiRegionHostedSolution.cs" />
+    <Compile Include="Core\EmployeeType.cs" />
+    <Compile Include="Core\EmployeeActivationStatus.cs" />
+    <Compile Include="Core\SubscriptionMethod.cs" />
+    <Compile Include="Core\SubscriptionRecord.cs" />
+    <Compile Include="Core\UserGroupRefDictionary.cs" />
+    <Compile Include="Configuration\SmtpSettings.cs" />
+    <Compile Include="Context\SecurityContext.cs" />
+    <Compile Include="Caching\CachedTenantService.cs" />
+    <Compile Include="Data\DbAzService.cs" />
+    <Compile Include="Caching\CachedUserService.cs" />
+    <Compile Include="Core\IAzService.cs" />
+    <Compile Include="Core\ISubscriptionService.cs" />
+    <Compile Include="Data\DbQuotaService.cs" />
+    <Compile Include="Core\IQuotaService.cs" />
+    <Compile Include="Data\DbTenantService.cs" />
+    <Compile Include="Core\ITenantService.cs" />
+    <Compile Include="Data\DbUserService.cs" />
+    <Compile Include="Core\Group.cs" />
+    <Compile Include="Core\IUserService.cs" />
+    <Compile Include="Data\DbSubscriptionService.cs" />
+    <Compile Include="Core\UserGroupRef.cs" />
+    <Compile Include="Core\UserGroupRefType.cs" />
+    <Compile Include="Data\DbBaseService.cs" />
+    <Compile Include="HostedSolution.cs" />
+    <Compile Include="Context\CoreContext.cs" />
+    <Compile Include="Context\WorkContext.cs" />
+    <Compile Include="Configuration\Constants.cs" />
+    <Compile Include="Notify\DirectSubscriptionProvider.cs" />
+    <Compile Include="Notify\Signalr\ISignalrService.cs" />
+    <Compile Include="Notify\Jabber\JabberServiceClient.cs" />
+    <Compile Include="Notify\Jabber\IJabberService.cs" />
+    <Compile Include="Notify\JabberSenderSink.cs" />
+    <Compile Include="Notify\Jabber\JabberServiceClientWcf.cs" />
+    <Compile Include="Notify\Jabber\MessageStruct.cs" />
+    <Compile Include="Notify\NotifyServiceClient.cs" />
+    <Compile Include="Notify\NotifySource.cs" />
+    <Compile Include="Notify\PushSenderSink.cs" />
+    <Compile Include="Notify\Push\IPushService.cs" />
+    <Compile Include="Notify\Push\PushConstants.cs" />
+    <Compile Include="Notify\Push\Enums.cs" />
+    <Compile Include="Notify\Push\PushNotification.cs" />
+    <Compile Include="Notify\Push\PushServiceClient.cs" />
+    <Compile Include="Notify\RecipientProviderImpl.cs" />
+    <Compile Include="Notify\ReplyToTagProvider.cs" />
+    <Compile Include="Notify\Senders\NotifyServiceSender.cs" />
+    <Compile Include="Notify\Senders\SmtpSender.cs" />
+    <Compile Include="Notify\Senders\INotifySender.cs" />
+    <Compile Include="Notify\Senders\JabberSender.cs" />
+    <Compile Include="Notify\Senders\NoticeSendResult.cs" />
+    <Compile Include="Notify\Senders\AWSSender.cs" />
+    <Compile Include="Notify\EmailSenderSink.cs" />
+    <Compile Include="Notify\Signalr\SignalrServiceClient.cs" />
+    <Compile Include="Security\Crypto.cs" />
+    <Compile Include="Security\EmailValidationKeyProvider.cs" />
+    <Compile Include="Settings\ISettings.cs" />
+    <Compile Include="Settings\SettingsManager.cs" />
+    <Compile Include="Tenants\TenantAnalyticsSettings.cs" />
+    <Compile Include="Tenants\TenantAuditSettings.cs" />
+    <Compile Include="Tenants\TenantCookieSettings.cs" />
+    <Compile Include="Tenants\TenantDomainValidator.cs" />
+    <Compile Include="Tenants\TenantIndustry.cs" />
+    <Compile Include="Tenants\TenantQuotaException.cs" />
+    <Compile Include="Tenants\TenantQuotaType.cs" />
+    <Compile Include="Tenants\TenantTrustedDomainsType.cs" />
+    <Compile Include="Tenants\TenantStatus.cs" />
+    <Compile Include="Tenants\TenantExceptions.cs" />
+    <Compile Include="Tenants\TenantQuotaRowQuery.cs" />
+    <Compile Include="Tenants\TenantQuotaRow.cs" />
+    <Compile Include="Tenants\TenantQuota.cs" />
+    <Compile Include="Security\Authentication\CookieStorage.cs" />
+    <Compile Include="Security\Authentication\UserAccount.cs" />
+    <Compile Include="Security\Authorizing\PermissionProvider.cs" />
+    <Compile Include="Security\Authorizing\PermissionResolver.cs" />
+    <Compile Include="Security\Authorizing\RoleProvider.cs" />
+    <Compile Include="Tenants\Tenant.cs" />
+    <Compile Include="Tenants\TenantRegistrationInfo.cs" />
+    <Compile Include="Tenants\TenantUtil.cs" />
+    <Compile Include="Tenants\TenantVersion.cs" />
+    <Compile Include="Users\DisplayUserNameFormat.cs" />
+    <Compile Include="Core\EmployeeStatus.cs" />
+    <Compile Include="Security\UserSecurityProvider.cs" />
+    <Compile Include="Core\IncludeType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\Constants.cs" />
+    <Compile Include="Core\GroupInfo.cs" />
+    <Compile Include="Core\UserInfo.cs" />
+    <Compile Include="Users\PersonalQuotaSettings.cs" />
+    <Compile Include="Users\UserExtensions.cs" />
+    <Compile Include="Users\UserFormatter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASC.Common\ASC.Common.csproj">
+      <Project>{76de7717-3d4b-4a5b-b740-15b8913df0cb}</Project>
+      <Name>ASC.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

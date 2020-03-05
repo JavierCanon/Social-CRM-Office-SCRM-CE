@@ -1,0 +1,163 @@
+/*
+ *
+ * (c) Copyright Ascensio System Limited 2010-2020
+ *
+ * This program is freeware. You can redistribute it and/or modify it under the terms of the GNU 
+ * General Public License (GPL) version 3 as published by the Free Software Foundation (https://www.gnu.org/copyleft/gpl.html). 
+ * In accordance with Section 7(a) of the GNU GPL its Section 15 shall be amended to the effect that 
+ * Ascensio System SIA expressly excludes the warranty of non-infringement of any third-party rights.
+ *
+ * THIS PROGRAM IS DISTRIBUTED WITHOUT ANY WARRANTY; WITHOUT EVEN THE IMPLIED WARRANTY OF MERCHANTABILITY OR
+ * FITNESS FOR A PARTICULAR PURPOSE. For more details, see GNU GPL at https://www.gnu.org/copyleft/gpl.html
+ *
+ * You can contact Ascensio System SIA by email at sales@onlyoffice.com
+ *
+ * The interactive user interfaces in modified source and object code versions of ONLYOFFICE must display 
+ * Appropriate Legal Notices, as required under Section 5 of the GNU GPL version 3.
+ *
+ * Pursuant to Section 7 § 3(b) of the GNU GPL you must retain the original ONLYOFFICE logo which contains 
+ * relevant author attributions when distributing the software. If the display of the logo in its graphic 
+ * form is not reasonably feasible for technical reasons, you must include the words "Powered by ONLYOFFICE" 
+ * in every copy of the program you distribute. 
+ * Pursuant to Section 7 § 3(e) we decline to grant you any rights under trademark law for use of our trademarks.
+ *
+*/
+
+
+/*******************************************************************************
+    Convert&Dowload
+*******************************************************************************/
+.cnvrt-list-file-block {
+    padding: 10px 0;
+}
+.cnvrt-list-file-block .tl-combobox {
+    max-width: 100%;
+    display: none;
+}
+.cnvrt-list-file-block .tl-combobox .combobox-container .container-top {
+    right: 8px;
+}
+.cnvrt-list-file-block .tl-combobox .combobox-container .combobox-options {
+    max-height: none;
+}
+.cnvrt-file-block {
+    border-left: medium none;
+    border-right: medium none;
+    margin-bottom: -1px;
+    min-height: 30px;
+}
+.cnvrt-file-block:hover {
+    background-color: #f2f2f2;
+}
+.cnvrt-file-block-active {
+    background-color: #fafafa;
+}
+.cnvrt-file-block-open .cnvrt-file-block-head {
+    border-bottom: 1px dotted #d1d1d1;
+}
+.cnvrt-file-block-body {
+    padding-left: 20px;
+}
+.cnvrt-file-block-open .cnvrt-file-block-body {
+    display: block;
+}
+.cnvrt-file-block-closed .cnvrt-file-block-body {
+    display: none;
+}
+.cnvrt-status-content {
+    background-color: transparent;
+    background-image: url("images/tree_action.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    width: 20px;
+}
+.cnvrt-file-block-open .cnvrt-status-content {
+    background-position: -12px 5px;
+}
+.cnvrt-file-block-closed .cnvrt-status-content {
+    background-position: 5px 5px;
+}
+.cnvrt-cbx-content {
+    float: left;
+    margin-top: 6px;
+}
+.cnvrt-format-icon-content {
+    float: left;
+    margin: 4px 5px 5px;
+}
+.cnvrt-title-content {
+    float: left;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 205px;
+}
+.cnvrt-title-content .file-extension {
+    font-weight: bold;
+}
+.cnvrt-file-block-head .cnvrt-title-content {
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+    width: 231px;
+}
+.cnvrt-tooltip-content {
+    color: #808080;
+    display: none;
+    float: left;
+    line-height: 30px;
+    overflow: hidden;
+    padding: 0 10px;
+    text-align: right;
+    text-overflow: ellipsis;
+    width: 115px;
+    white-space: nowrap;
+}
+.cnvrt-format-title-content {
+    float: right;
+    margin-top: 8px;
+    width: 130px;
+}
+.cnvrt-format-title-content select {
+    width: 122px;
+}
+.mobile .cnvrt-format-title-content {
+    margin-top: 3px;
+}
+.cnvrt-format-title-content .tl-combobox {
+    height: 15px;
+}
+.cnvrt-format-title {
+    display: none;
+}
+
+.cnvrt-file-block-active .tl-combobox {
+    display: inline-block;
+}
+.cnvrt-file-block-active .tl-combobox .combobox-title .inner-text {
+    border-bottom-width: 0;
+}
+.cnvrt-file-block-active:hover .tl-combobox .combobox-title .inner-text {
+    border-bottom-width: 1px;
+}
+
+.cnvrt-file-block-active .cnvrt-file-block-head .cnvrt-tooltip-content,
+.cnvrt-file-block-active .cnvrt-file-row-active .cnvrt-tooltip-content {
+    display: block;
+}
+.cnvrt-file-row,
+.cnvrt-file-block-head {
+    height: 30px;
+}
+/***********************************\
+    Convert and Open
+\***********************************/
+#confirmCopyConvert .files-progress-box {
+    border: none;
+    display: block;
+    margin-left: auto;
+    padding: 0;
+}

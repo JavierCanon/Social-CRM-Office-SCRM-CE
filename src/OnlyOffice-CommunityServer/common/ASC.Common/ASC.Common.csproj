@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76DE7717-3D4B-4A5B-B740-15B8913DF0CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ASC.Common</RootNamespace>
+    <AssemblyName>ASC.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <OutputPath>..\..\web\studio\ASC.Web.Studio\bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ARSoft.Tools.Net">
+      <HintPath>..\..\packages\ARSoft.Tools.Net.2.2.9\lib\net45\ARSoft.Tools.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac">
+      <HintPath>..\..\packages\Autofac.4.8.1\lib\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary">
+      <HintPath>..\..\packages\AntiXSS.4.3.0\lib\net40\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\NLog.4.5.8\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\StackExchange.Redis.2.0.519\lib\net472\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis.Extensions.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\StackExchange.Redis.Extensions.Core.4.0.5\lib\net472\StackExchange.Redis.Extensions.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis.Extensions.LegacyConfiguration">
+      <HintPath>..\..\packages\StackExchange.Redis.Extensions.LegacyConfiguration.4.0.5\lib\net461\StackExchange.Redis.Extensions.LegacyConfiguration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers">
+      <HintPath>..\..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.IO.Pipelines">
+      <HintPath>..\..\packages\System.IO.Pipelines.4.5.3\lib\netstandard2.0\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>..\..\packages\System.Memory.4.5.2\lib\netstandard1.1\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>..\..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels">
+      <HintPath>..\..\packages\System.Threading.Channels.4.5.0\lib\netstandard2.0\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>..\..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\packages\HtmlAgilityPack.1.6.0.1\lib\net462\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NVelocity">
+      <HintPath>..\..\packages\NVelocity.1.0.3\lib\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Pipelines.Sockets.Unofficial">
+      <HintPath>..\..\packages\Pipelines.Sockets.Unofficial.1.0.9\lib\net472\Pipelines.Sockets.Unofficial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>..\..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.PerformanceCounter">
+      <HintPath>..\..\packages\System.Diagnostics.PerformanceCounter.4.5.0\lib\net461\System.Diagnostics.PerformanceCounter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Caching\AscCache.cs" />
+    <Compile Include="Caching\CacheNotifyAction.cs" />
+    <Compile Include="Caching\ICache.cs" />
+    <Compile Include="Caching\ICacheNotify.cs" />
+    <Compile Include="Caching\RedisCache.cs" />
+    <Compile Include="Collections\CachedDictionaryBase.cs" />
+    <Compile Include="Collections\HttpRequestDictionary.cs" />
+    <Compile Include="Data\AdoProxy\DbCommandProxy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\AdoProxy\DbConnectionProxy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\AdoProxy\DbTransactionProxy.cs" />
+    <Compile Include="Data\AdoProxy\ExecuteHelper.cs" />
+    <Compile Include="Data\AdoProxy\ProxyContext.cs" />
+    <Compile Include="Data\AdoProxy\EventArgs.cs" />
+    <Compile Include="Data\DbNestedTransaction.cs" />
+    <Compile Include="Data\DataExtensions.cs" />
+    <Compile Include="Data\DbManager.cs" />
+    <Compile Include="Data\DbRegistry.cs" />
+    <Compile Include="Data\DbTransaction.cs" />
+    <Compile Include="Data\IDbManager.cs" />
+    <Compile Include="Data\MultiRegionalDbManager.cs" />
+    <Compile Include="Data\Sql\Expressions\SumExp.cs" />
+    <Compile Include="Data\Sql\Expressions\IfExp.cs" />
+    <Compile Include="Data\Sql\SqlDebugView.cs" />
+    <Compile Include="Data\Sql\Dialects\SQLiteDialect.cs" />
+    <Compile Include="Data\Sql\Dialects\MySQLDialect.cs" />
+    <Compile Include="Data\Sql\Expressions\BetweenExp.cs" />
+    <Compile Include="Data\Sql\Expressions\ExistsExp.cs" />
+    <Compile Include="Data\Sql\Expressions\LGtExp.cs" />
+    <Compile Include="Data\Sql\Expressions\AsExp.cs" />
+    <Compile Include="Data\Sql\Expressions\EqColumnsExp.cs" />
+    <Compile Include="Data\Sql\Expressions\EqExp.cs" />
+    <Compile Include="Data\Sql\Expressions\Exp.cs" />
+    <Compile Include="Data\Sql\Expressions\InExp.cs" />
+    <Compile Include="Data\Sql\Expressions\JunctionExp.cs" />
+    <Compile Include="Data\Sql\Expressions\LikeExp.cs" />
+    <Compile Include="Data\Sql\Expressions\SelectAgregate.cs" />
+    <Compile Include="Data\Sql\Expressions\SqlExp.cs" />
+    <Compile Include="Data\Sql\ISqlDialect.cs" />
+    <Compile Include="Data\Sql\ISqlInstruction.cs" />
+    <Compile Include="Data\Sql\SqlCreate.cs" />
+    <Compile Include="Data\Sql\SqlDelete.cs" />
+    <Compile Include="Data\Sql\Dialects\SqlDialect.cs" />
+    <Compile Include="Data\Sql\SqlIdentifier.cs" />
+    <Compile Include="Data\Sql\SqlInsert.cs" />
+    <Compile Include="Data\Sql\SqlQuery.cs" />
+    <Compile Include="Data\Sql\SqlUpdate.cs" />
+    <Compile Include="Data\StreamExtension.cs" />
+    <Compile Include="Data\TempStream.cs" />
+    <Compile Include="DependencyInjection\AutofacConfigLoader.cs" />
+    <Compile Include="DependencyInjection\AutofacConfigurationSection.cs" />
+    <Compile Include="DependencyInjection\ComponentElement.cs" />
+    <Compile Include="DependencyInjection\ContainerElementCollection.cs" />
+    <Compile Include="DependencyInjection\ConfigurationElementCollection.cs" />
+    <Compile Include="DependencyInjection\DictionaryElementCollection.cs" />
+    <Compile Include="DependencyInjection\ListElementCollection.cs" />
+    <Compile Include="DependencyInjection\ListItemElement.cs" />
+    <Compile Include="DependencyInjection\NamedConfigurationElementCollection.cs" />
+    <Compile Include="DependencyInjection\ParameterElement.cs" />
+    <Compile Include="DependencyInjection\ParameterElementCollection.cs" />
+    <Compile Include="DependencyInjection\TypeManipulation.cs" />
+    <Compile Include="Geolocation\IPGeolocationInfo.cs" />
+    <Compile Include="Geolocation\GeolocationHelper.cs" />
+    <Compile Include="Logging\SelfCleaningTarget.cs" />
+    <Compile Include="Logging\Log.cs" />
+    <Compile Include="Logging\SelfCleaningAppender.cs" />
+    <Compile Include="Logging\SpecialFolderPathConverter.cs" />
+    <Compile Include="Module\BaseWcfClient.cs" />
+    <Compile Include="Module\IServiceController.cs" />
+    <Compile Include="Notify\Channels\ISenderChannel.cs" />
+    <Compile Include="Notify\Channels\SenderChannel.cs" />
+    <Compile Include="Notify\Context.cs" />
+    <Compile Include="Notify\INotifyRegistry.cs" />
+    <Compile Include="Notify\Cron\CronExpression.cs" />
+    <Compile Include="Notify\Cron\ISet.cs" />
+    <Compile Include="Notify\Cron\ISortedSet.cs" />
+    <Compile Include="Notify\Cron\TreeSet.cs" />
+    <Compile Include="Notify\Engine\DispatchEngine.cs" />
+    <Compile Include="Notify\Engine\INotifyEngine.cs" />
+    <Compile Include="Notify\Engine\InterceptorStorage.cs" />
+    <Compile Include="Notify\Engine\NotifyEngine.cs" />
+    <Compile Include="Notify\Engine\NotifyRequest.cs" />
+    <Compile Include="Notify\Engine\SendInterceptorSkeleton.cs" />
+    <Compile Include="Notify\Engine\SingleRecipientInterceptor.cs" />
+    <Compile Include="Notify\InitiatorInterceptor.cs" />
+    <Compile Include="Notify\INotifyClient.cs" />
+    <Compile Include="Notify\InterceptorLifetime.cs" />
+    <Compile Include="Notify\InterceptorPlace.cs" />
+    <Compile Include="Notify\ISendInterceptor.cs" />
+    <Compile Include="Notify\INotifyService.cs" />
+    <Compile Include="Notify\Messages\INoticeMessage.cs" />
+    <Compile Include="Notify\Messages\NoticeMessage.cs" />
+    <Compile Include="Notify\Messages\NotifyMessage.cs" />
+    <Compile Include="Notify\Model\TopSubscriptionProvider.cs" />
+    <Compile Include="Notify\NotifyResult.cs" />
+    <Compile Include="Notify\Messages\SendResponse.cs" />
+    <Compile Include="Notify\Messages\SendResult.cs" />
+    <Compile Include="Notify\Model\ConstActionProvider.cs" />
+    <Compile Include="Notify\Model\IActionProvider.cs" />
+    <Compile Include="Notify\Model\INotifyAction.cs" />
+    <Compile Include="Notify\Model\INotifySource.cs" />
+    <Compile Include="Notify\Model\ISubscriptionProvider.cs" />
+    <Compile Include="Notify\Model\NotifyAction.cs" />
+    <Compile Include="Notify\Model\NotifyClientImpl.cs" />
+    <Compile Include="Notify\NotifyException.cs" />
+    <Compile Include="Notify\Patterns\XmlPatternProvider2.cs" />
+    <Compile Include="Notify\Patterns\IPatternStyler.cs" />
+    <Compile Include="Notify\Patterns\NVelocityPatternFormatter.cs" />
+    <Compile Include="Notify\Patterns\IPattern.cs" />
+    <Compile Include="Notify\Patterns\IPatternFormatter.cs" />
+    <Compile Include="Notify\Patterns\IPatternProvider.cs" />
+    <Compile Include="Notify\Patterns\ITagValue.cs" />
+    <Compile Include="Notify\Patterns\Pattern.cs" />
+    <Compile Include="Notify\Patterns\PatternFormatter.cs" />
+    <Compile Include="Notify\Patterns\ReplacePatternFormatter.cs" />
+    <Compile Include="Notify\Patterns\TagValue.cs" />
+    <Compile Include="Notify\Recipients\DirectRecipient.cs" />
+    <Compile Include="Notify\Recipients\IDirectRecipient.cs" />
+    <Compile Include="Notify\Recipients\IRecipient.cs" />
+    <Compile Include="Notify\Recipients\IRecipientsGroup.cs" />
+    <Compile Include="Notify\Recipients\IRecipientsProvider.cs" />
+    <Compile Include="Notify\Recipients\RecipientsGroup.cs" />
+    <Compile Include="Notify\Sinks\DispatchSink.cs" />
+    <Compile Include="Notify\Sinks\ISink.cs" />
+    <Compile Include="Notify\Sinks\Sink.cs" />
+    <Compile Include="Security\AscRandom.cs" />
+    <Compile Include="Security\Authentication\SystemAccount.cs" />
+    <Compile Include="Security\Authorizing\AzObjectIdHelper.cs" />
+    <Compile Include="Security\Authorizing\AzObjectSecurityProviderHelper.cs" />
+    <Compile Include="Security\Cryptography\InstanceCrypto.cs" />
+    <Compile Include="Security\Cryptography\MachinePseudoKeys.cs" />
+    <Compile Include="Security\ISecurityObject.cs" />
+    <Compile Include="Security\SecurityCallContext.cs" />
+    <Compile Include="Security\SecurityObjectId.cs" />
+    <Compile Include="Security\Cryptography\HashAlg.cs" />
+    <Compile Include="Security\Cryptography\Hasher.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\Authentication\Account.cs" />
+    <Compile Include="Security\Authentication\IAccount.cs" />
+    <Compile Include="Security\Authentication\ISystemAccount.cs" />
+    <Compile Include="Security\Authentication\IUserAccount.cs" />
+    <Compile Include="Security\Authorizing\AuthorizingException.cs" />
+    <Compile Include="Security\Authorizing\Constants.cs" />
+    <Compile Include="Security\Authorizing\Domain\Ace.cs" />
+    <Compile Include="Security\Authorizing\Domain\AceType.cs" />
+    <Compile Include="Security\Authorizing\Domain\Action.cs" />
+    <Compile Include="Security\Authorizing\Domain\Role.cs" />
+    <Compile Include="Security\Authorizing\AzManager.cs" />
+    <Compile Include="Security\IPermissionProvider.cs" />
+    <Compile Include="Security\Authorizing\Interfaces\IAction.cs" />
+    <Compile Include="Security\IPermissionResolver.cs" />
+    <Compile Include="Security\Authorizing\Interfaces\IRole.cs" />
+    <Compile Include="Security\Authorizing\Interfaces\ISubject.cs" />
+    <Compile Include="Security\IRoleProvider.cs" />
+    <Compile Include="Security\ISecurityObjectId.cs" />
+    <Compile Include="Security\ISecurityObjectProvider.cs" />
+    <Compile Include="Threading\DistributedTaskStatus.cs" />
+    <Compile Include="Threading\DistributedTask.cs" />
+    <Compile Include="Threading\LimitedConcurrencyLevelTaskScheduler.cs" />
+    <Compile Include="Threading\Progress\IProgressItem.cs" />
+    <Compile Include="Threading\Progress\ProgressBase.cs" />
+    <Compile Include="Threading\Progress\ProgressQueue.cs" />
+    <Compile Include="Threading\DistributedTaskQueue.cs" />
+    <Compile Include="Utils\DnsLookup.cs" />
+    <Compile Include="Utils\HttpRequestExtensions.cs" />
+    <Compile Include="Utils\MailAddressUtils.cs" />
+    <Compile Include="Utils\MimeHeaderUtils.cs" />
+    <Compile Include="Utils\RandomString.cs" />
+    <Compile Include="Utils\TimeZoneConverter\TimeZoneConverter.cs" />
+    <Compile Include="Utils\Signature.cs" />
+    <Compile Include="Utils\VelocityFormatter.cs" />
+    <Compile Include="Utils\HtmlUtil.cs" />
+    <Compile Include="Utils\Wildcard.cs" />
+    <Compile Include="Threading\Workers\WorkerQueue.cs" />
+    <Compile Include="Threading\Workers\WorkItem.cs" />
+    <Compile Include="Web\AbstractHttpAsyncHandler.cs" />
+    <Compile Include="Web\DisposableHttpContext.cs" />
+    <Compile Include="Web\DisposableHttpContextHttpModule.cs" />
+    <Compile Include="Web\MimeMapping.cs" />
+    <Compile Include="Web\RouteCallInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Utils\TimeZoneConverter\windowsZones.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Utils\TimeZoneConverter\timeZoneNames.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

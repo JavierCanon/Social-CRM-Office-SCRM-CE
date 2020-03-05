@@ -1,0 +1,181 @@
+/*
+ *
+ * (c) Copyright Ascensio System Limited 2010-2020
+ *
+ * This program is freeware. You can redistribute it and/or modify it under the terms of the GNU 
+ * General Public License (GPL) version 3 as published by the Free Software Foundation (https://www.gnu.org/copyleft/gpl.html). 
+ * In accordance with Section 7(a) of the GNU GPL its Section 15 shall be amended to the effect that 
+ * Ascensio System SIA expressly excludes the warranty of non-infringement of any third-party rights.
+ *
+ * THIS PROGRAM IS DISTRIBUTED WITHOUT ANY WARRANTY; WITHOUT EVEN THE IMPLIED WARRANTY OF MERCHANTABILITY OR
+ * FITNESS FOR A PARTICULAR PURPOSE. For more details, see GNU GPL at https://www.gnu.org/copyleft/gpl.html
+ *
+ * You can contact Ascensio System SIA by email at sales@onlyoffice.com
+ *
+ * The interactive user interfaces in modified source and object code versions of ONLYOFFICE must display 
+ * Appropriate Legal Notices, as required under Section 5 of the GNU GPL version 3.
+ *
+ * Pursuant to Section 7 § 3(b) of the GNU GPL you must retain the original ONLYOFFICE logo which contains 
+ * relevant author attributions when distributing the software. If the display of the logo in its graphic 
+ * form is not reasonably feasible for technical reasons, you must include the words "Powered by ONLYOFFICE" 
+ * in every copy of the program you distribute. 
+ * Pursuant to Section 7 § 3(e) we decline to grant you any rights under trademark law for use of our trademarks.
+ *
+*/
+
+
+.ftFile_21,
+.ftFile_32,
+.ftFolder_21,
+.ftFolder_32 {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: transparent;
+}
+.ftFile_32,
+.ftFolder_32 {
+    background-position: 0 0;
+    height: 32px;
+    width: 32px;
+}
+.ftFile_21,
+.ftFolder_21,
+.compact .ftFile_32,
+.compact .ftFolder_32 {
+    background-position: 0 -39px;
+    height: 21px;
+    width: 21px;
+}
+.compact .ftFolder_32 {
+    background-position: 50% 50%;
+    background-size:100%;
+}
+/*folder default*/
+.ftFolder_21,
+.ftFolder_32 {
+    background: url('images/svg/documents/folder.svg') no-repeat;
+    background-position: 50% 50%;
+    left: 1px;
+    background-size: 32px;
+}
+/*file default*/
+.ftFile_21,
+.ftFile_32{
+    background-image: url('images/filetype/file.png');
+    background-size: 32px 60px;
+}
+
+
+/*".zip", ".rar", ".ace", ".arc", ".arj", ".bh", ".cab", ".enc", ".gz", ".ha", ".jar", ".lha", ".lzh", ".pak", ".pk3", ".tar", ".tgz", ".uu", ".uue", ".xxe", ".z", ".zoo"*/
+.ft_Archive{background-image:url('images/filetype/file_archive.png');}
+.ft_Cal{background-image:url('images/filetype/file_cal.png');}
+.ft_Csv{background-image:url('images/filetype/file_csv.png');}
+.ft_Djvu{background-image:url('images/filetype/file_djvu.png');}
+.ft_Doc{background-image:url('images/filetype/file_doc.png');}
+.ft_Docx{background-image:url('images/filetype/file_docx.png');}
+.ft_Docm{background-image:url('images/filetype/file_docm.png');}
+.ft_Doct{background-image:url('images/filetype/file_doct.png');}
+.ft_Dot{background-image:url('images/filetype/file_dot.png');}
+.ft_Dotx{background-image:url('images/filetype/file_dotx.png');}
+.ft_Dotm{background-image:url('images/filetype/file_dotm.png');}
+/*".epub", ".fb2"*/
+.ft_Ebook{background-image:url('images/filetype/file_ebook.png');}
+.ft_Gsheet{background-image:url('images/filetype/file_gsheet.png');}
+.ft_Gslides{background-image:url('images/filetype/file_gslides.png');}
+.ft_Gdoc{background-image:url('images/filetype/file_gdoc.png');}
+/*".html", ".htm", ".mht"*/
+.ft_Html{background-image:url('images/filetype/file_html.png');}
+.ft_Iaf{background-image:url('images/filetype/file_iaf.png');}
+/*".bmp", ".cod", ".gif", ".ief", ".jpe", ".jpeg", ".jpg", ".jfif", ".tiff", ".tif", ".cmx", ".ico", ".png", ".pnm", ".pbm", ".ppm", ".rgb", ".xbm", ".xpm", ".xwd"*/
+.ft_Image{background-image:url('images/filetype/file_image.png');}
+.ft_M2ts{background-image:url('images/filetype/file_m2ts.png');}
+.ft_Odp{background-image:url('images/filetype/file_odp.png');}
+.ft_Ods{background-image:url('images/filetype/file_ods.png');}
+.ft_Odt{background-image:url('images/filetype/file_odt.png');}
+.ft_Pdf{background-image:url('images/filetype/file_pdf.png');}
+.ft_Pps{background-image:url('images/filetype/file_pps.png');}
+.ft_Ppsx{background-image:url('images/filetype/file_ppsx.png');}
+.ft_Ppsm{background-image:url('images/filetype/file_ppsm.png');}
+.ft_Ppt{background-image:url('images/filetype/file_ppt.png');}
+.ft_Pptx{background-image:url('images/filetype/file_pptx.png');}
+.ft_Pptm{background-image:url('images/filetype/file_pptm.png');}
+.ft_Pptt{background-image:url('images/filetype/file_pptt.png');}
+.ft_Pot{background-image:url('images/filetype/file_pot.png');}
+.ft_Potx{background-image:url('images/filetype/file_potx.png');}
+.ft_Potm{background-image:url('images/filetype/file_potm.png');}
+.ft_Rtf{background-image:url('images/filetype/file_rtf.png');}
+/*".mp3", ".wav", ".pcm", ".aiff", ".3gp", ".flac", ".fla", ".cda"*/
+.ft_Sound{background-image:url('images/filetype/file_sound.png');}
+.ft_SoundUnk{background-image:url('images/filetype/file_soundunk.png');}
+.ft_Svg{background-image:url('images/filetype/file_svg.png');}
+.ft_Txt{background-image:url('images/filetype/file_txt.png');}
+.ft_Video{background-image:url('images/filetype/file_video.png');}
+.ft_VideoUnk{background-image:url('images/filetype/file_videounk.png');}
+.ft_Xls{background-image:url('images/filetype/file_xls.png');}
+.ft_Xlsx{background-image:url('images/filetype/file_xlsx.png');}
+.ft_Xlsm{background-image:url('images/filetype/file_xlsm.png');}
+.ft_Xlst{background-image:url('images/filetype/file_xlst.png');}
+.ft_Xlt{background-image:url('images/filetype/file_xlt.png');}
+.ft_Xltx{background-image:url('images/filetype/file_xltx.png');}
+.ft_Xltm{background-image:url('images/filetype/file_xltm.png');}
+.ft_Xml{background-image:url('images/filetype/file_xml.png');}
+.ft_Xps{background-image:url('images/filetype/file_xps.png');}
+
+
+/*******************************************************************************
+   For Retina
+*******************************************************************************/
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx)
+{
+.ftFile_21,
+.ftFile_32 {
+    background-image:url('images/filetype/retina/file.png');
+}
+.ft_Archive{background-image:url('images/filetype/retina/file_archive.png');}
+.ft_Csv{background-image:url('images/filetype/retina/file_csv.png');}
+.ft_Djvu{background-image:url('images/filetype/retina/file_djvu.png');}
+.ft_Doc{background-image:url('images/filetype/retina/file_doc.png');}
+.ft_Docx{background-image:url('images/filetype/retina/file_docx.png');}
+.ft_Docm{background-image:url('images/filetype/retina/file_docm.png');}
+.ft_Dot{background-image:url('images/filetype/retina/file_dot.png');}
+.ft_Dotx{background-image:url('images/filetype/retina/file_dotx.png');}
+.ft_Dotm{background-image:url('images/filetype/retina/file_dotm.png');}
+.ft_Ebook{background-image:url('images/filetype/retina/file_ebook.png');}
+.ft_Html{background-image:url('images/filetype/retina/file_html.png');}
+.ft_Iaf{background-image:url('images/filetype/retina/file_iaf.png');}
+.ft_Image{background-image:url('images/filetype/retina/file_image.png');}
+.ft_M2ts{background-image:url('images/filetype/retina/file_m2ts.png');}
+.ft_Odp{background-image:url('images/filetype/retina/file_odp.png');}
+.ft_Ods{background-image:url('images/filetype/retina/file_ods.png');}
+.ft_Odt{background-image:url('images/filetype/retina/file_odt.png');}
+.ft_Pdf{background-image:url('images/filetype/retina/file_pdf.png');}
+.ft_Pps{background-image:url('images/filetype/retina/file_pps.png');}
+.ft_Ppsx{background-image:url('images/filetype/retina/file_ppsx.png');}
+.ft_Ppsm{background-image:url('images/filetype/retina/file_ppsm.png');}
+.ft_Ppt{background-image:url('images/filetype/retina/file_ppt.png');}
+.ft_Pptx{background-image:url('images/filetype/retina/file_pptx.png');}
+.ft_Pptm{background-image:url('images/filetype/retina/file_pptm.png');}
+.ft_Pot{background-image:url('images/filetype/retina/file_pot.png');}
+.ft_Potx{background-image:url('images/filetype/retina/file_potx.png');}
+.ft_Potm{background-image:url('images/filetype/retina/file_potm.png');}
+.ft_Rtf{background-image:url('images/filetype/retina/file_rtf.png');}
+.ft_Sound{background-image:url('images/filetype/retina/file_sound.png');}
+.ft_SoundUnk{background-image:url('images/filetype/retina/file_soundunk.png');}
+.ft_Svg{background-image:url('images/filetype/retina/file_svg.png');}
+.ft_Txt{background-image:url('images/filetype/retina/file_txt.png');}
+.ft_Video{background-image:url('images/filetype/retina/file_video.png');}
+.ft_VideoUnk{background-image:url('images/filetype/retina/file_videounk.png');}
+.ft_Xls{background-image:url('images/filetype/retina/file_xls.png');}
+.ft_Xlsx{background-image:url('images/filetype/retina/file_xlsx.png');}
+.ft_Xlsm{background-image:url('images/filetype/retina/file_xlsm.png');}
+.ft_Xlt{background-image:url('images/filetype/retina/file_xlt.png');}
+.ft_Xltx{background-image:url('images/filetype/retina/file_xltx.png');}
+.ft_Xltm{background-image:url('images/filetype/retina/file_xltm.png');}
+.ft_Xml{background-image:url('images/filetype/retina/file_xml.png');}
+.ft_Xps{background-image:url('images/filetype/retina/file_xps.png');}
+}

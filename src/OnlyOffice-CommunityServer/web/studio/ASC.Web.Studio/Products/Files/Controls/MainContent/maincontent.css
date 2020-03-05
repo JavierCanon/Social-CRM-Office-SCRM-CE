@@ -1,0 +1,204 @@
+/*
+ *
+ * (c) Copyright Ascensio System Limited 2010-2020
+ *
+ * This program is freeware. You can redistribute it and/or modify it under the terms of the GNU 
+ * General Public License (GPL) version 3 as published by the Free Software Foundation (https://www.gnu.org/copyleft/gpl.html). 
+ * In accordance with Section 7(a) of the GNU GPL its Section 15 shall be amended to the effect that 
+ * Ascensio System SIA expressly excludes the warranty of non-infringement of any third-party rights.
+ *
+ * THIS PROGRAM IS DISTRIBUTED WITHOUT ANY WARRANTY; WITHOUT EVEN THE IMPLIED WARRANTY OF MERCHANTABILITY OR
+ * FITNESS FOR A PARTICULAR PURPOSE. For more details, see GNU GPL at https://www.gnu.org/copyleft/gpl.html
+ *
+ * You can contact Ascensio System SIA by email at sales@onlyoffice.com
+ *
+ * The interactive user interfaces in modified source and object code versions of ONLYOFFICE must display 
+ * Appropriate Legal Notices, as required under Section 5 of the GNU GPL version 3.
+ *
+ * Pursuant to Section 7 § 3(b) of the GNU GPL you must retain the original ONLYOFFICE logo which contains 
+ * relevant author attributions when distributing the software. If the display of the logo in its graphic 
+ * form is not reasonably feasible for technical reasons, you must include the words "Powered by ONLYOFFICE" 
+ * in every copy of the program you distribute. 
+ * Pursuant to Section 7 § 3(e) we decline to grant you any rights under trademark law for use of our trademarks.
+ *
+*/
+
+
+#settingCommon,
+#settingThirdPartyPanel {
+    display: none;
+}
+/*******************************************************************************
+    header
+*******************************************************************************/
+.stick-panel .menu-action-on-top {
+    display: list-item;
+}
+.stick-panel #switchViewFolder {
+    margin-left: 12px;
+}
+
+/*******************************************************************************
+    Content Menu
+*******************************************************************************/
+ul.contentMenu {
+    padding-top: 8px;
+}
+.advansed-filter {
+    margin-bottom: 24px;
+}
+/*******************************************************************************
+     Dialog window
+*******************************************************************************/
+
+div.files-remove-list {
+    border: 1px solid #D1D1D1;
+    line-height: 20px;
+    margin: 15px 0 0;
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 10px 10px;
+}
+.files-remove-list > dl {
+    margin: 0;
+}
+dd.confirm-remove-folders,
+dd.confirm-remove-files {
+    padding: 0;
+    margin-left: 0;
+}
+dd.confirm-remove-folders label,
+dd.confirm-remove-files label {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+dt.confirm-remove-folders,
+dt.confirm-remove-files {
+    font-weight: bold;
+    margin-top: 10px;
+}
+#confirmRemoveTextDescription,
+#confirmRemoveSharpBoxTextDescription {
+    padding: 10px 0 0;
+}
+#overwriteMessage {
+    overflow: hidden;
+    padding-bottom: 6px;
+}
+.overwrite-capt,
+#overwriteListShow,
+#overwriteListHide {
+    line-height: 30px;
+}
+.overwrite-resolve {
+    display: inline-block;
+    margin-bottom: 1px;
+    padding: 8px 10px;
+    width: 400px;
+}
+.overwrite-resolve.selected {
+    background-color: #f2f2f2;
+}
+.overwrite-resolve:hover {
+    background-color: #e5e5e5;
+}
+.overwrite-resolve input {
+    float: left;
+    margin: 4px 8px 0 0;
+}
+.overwrite-resolve-descr {
+    float: left;
+    width: 370px;
+}
+.overwrite-resolve-head {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+}
+#overwriteList {
+    border: 1px solid #D1D1D1;
+    line-height: 20px;
+    list-style-type: none;
+    margin: 0 0 15px;
+    max-height: 120px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 8px 15px;
+}
+#overwriteList li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 365px;
+}
+
+.change-owner-header {
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.change-owner-selector {
+    border-bottom: 1px dotted;
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*******************************************************************************
+    Panel with new items
+*******************************************************************************/
+.files-news-panel .file-row:hover {
+    background-color: #e5e5e5;
+}
+.files-news-panel .thumb-file,
+.files-news-panel .thumb-folder {
+    margin-top: 0;
+}
+.files-news-panel .entry-info,
+.files-news-panel .file-row .entry-title .name,
+.files-news-panel .file-row.folder-row .folder-row .entry-title .name {
+    max-width: 195px;
+}
+.files-news-panel .file-row {
+    height: 21px;
+}
+.files-news-panel .file-row .entry-title .name {
+    padding-top: 4px;
+}
+.files-news-panel .file-row .entry-title .name a {
+    font-size: 12px;
+}
+.files-news-panel .file-row .entry-title .name a .file-extension {
+    font-size: 11px;
+}
+.files-news-panel .entry-title {
+    width: auto;
+}
+#filesNewsList {
+    max-height: 300px;
+    padding: 0 12px;
+    width: 285px;
+}
+
+#filesNewsList .file-row {
+    margin-bottom: 0;
+}
+#filesNewsList .thumb-file,
+#filesNewsList .thumb-folder {
+    margin: 0 12px 0 0;
+}
+#filesNewsMarkRead {
+    display: inline-block;
+    margin: 8px 0 8px 12px;
+}
+/*******************************************************************************
+    Mobile
+*******************************************************************************/
+body.mobile #contentVersions .version-preview,
+body.mobile #contentVersions .version-comment-edit {
+    display: block;
+}

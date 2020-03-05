@@ -1,0 +1,23 @@
+<browsers>
+  <!-- sample UA "Opera/9.50 (J2ME/MIDP;Opera Mini/4.0.10031/209; U; en)" -->
+  <!-- 01/10/2008 Spacecowboy. This browser file is to support Opera Mini devices .  -->
+  <browser id="OperaMini" parentID="opera8to9">
+    <identification>
+      <userAgent match="Opera Mini" />
+    </identification>
+
+    <capabilities>
+      <capability name="browser"             value="OperaMini" />
+      <capability name="isMobileDevice"      value="true" />
+      <capability name="javascript"          value="true" />
+      <capability name="ecmascriptversion"   value="1.4" />
+      <capability name="supportsCss"         value="true" />
+      <capability name="frames"              value="true" />
+      <capability name="cookies"             value="true" />
+      <capability name="css2"                value="true" />
+      <capability name="javaapplets"         value="true" />
+      <capability name="tables"              value="true" />
+      
+    </capabilities>
+  </browser>
+</browsers>

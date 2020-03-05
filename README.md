@@ -1,134 +1,216 @@
-<p align="center">
-	<a href="https://www.onlyoffice.com/"><img alt="https://www.onlyoffice.com/" width="500px" src="https://static-www.onlyoffice.com/images/logo_small.svg"></a>
-</p>
-<hr />
-<p align="center">
-  <a href="https://www.onlyoffice.com/">Website</a> |
-  <a href="https://www.onlyoffice.com/server-solutions.aspx">Products</a> |
-  <a href="https://helpcenter.onlyoffice.com/">Documentation</a> |
-  <a href="https://api.onlyoffice.com/">API</a> |
-  <a href="https://www.onlyoffice.com/about.aspx">About</a>
-</p>
-<p align="center">
-  <a href="https://www.facebook.com/ONLYOFFICE-833032526736775/"><img alt="https://www.facebook.com/ONLYOFFICE-833032526736775/" src="https://download.onlyoffice.com/assets/logo/opensource/fb.png"></a>
-  <a href="https://twitter.com/ONLY_OFFICE"><img alt="https://twitter.com/ONLY_OFFICE" src="https://download.onlyoffice.com/assets/logo/opensource/tw.png"></a>
-  <a href="https://www.youtube.com/user/onlyofficeTV"><img alt="https://www.youtube.com/user/onlyofficeTV" src="https://download.onlyoffice.com/assets/logo/opensource/yt.png"></a>
-  <a href="https://www.instagram.com/the_onlyoffice/"><img alt="https://www.instagram.com/the_onlyoffice/" src="https://download.onlyoffice.com/assets/logo/opensource/in.png"></a>
-</p>
-<p align="center">
-  <a href="http://www.gnu.org/licenses/gpl-3.0.html"><img alt="http://www.gnu.org/licenses/gpl-3.0.html" src="https://img.shields.io/badge/License-GNU%20GPL%20V3-green.svg?style=flat"></a>
-  <a href="https://github.com/ONLYOFFICE/portals/releases"><img alt="https://github.com/ONLYOFFICE/portals/releases" src="https://img.shields.io/badge/release-10.5.1-blue.svg"></a>
-</p>
+﻿# Social CRM Office SCRM (Social CRM) 
 
-## Overview
+Social Office is a set free and open source tools (mainly in spanish) for Social Media Marketing, Digital Marketing, Social Managers, Community Managers, 
+by [Javier Cañon](https://www.javiercanon.com) 
+ 
 
-ONLYOFFICE Community Server is a free open source collaborative system developed to manage documents, projects, customer relationship and email correspondence, all in one place.
+## What does it Do? ##
 
-## Functionality
+Social CRM has applications in marketing, customer service and sales, including:
 
-* Cross platform solution: Linux, Windows
-* Document management
-* Integration with Google Drive, Box, Dropbox, OneDrive, OwnCloud
-* File sharing
-* Document embedding
-* Access rights management
-* Customizable CRM
-* Web-to-lead form
-* Invoicing system
-* Project Management
-* Gantt Chart
-* Milestones, task dependencies and subtasks
-* Time tracking
-* Automated reports
-* Blogs, forums, polls, wiki
-* Calendar
-* Email Aggregator
-* People module (employee database)
-* Instant Messenger
-* Support of more than 20 languages
+*    Social Engagement with prospects: SocialCRM tools allow businesses to better engage with their customers by, for example, listening to sentiments about their products and services.
+*    Social Customer Service: Ownership of social media is shifting away from Marketing and Communication as engagement increasingly relates to inbound customer service-based topics. Rather than social being seen purely as a space for companies to deliver outbound marketing messages, it is the inbound customer queries that allow for meaningful points of engagement and the building of brand advocacy.
+*    Personalized Marketing Strategy: The ability to create custom content is increasingly dependent on access to reliable, qualitative social user data to facilitate precise audience segmentation. Furthermore, dynamic audience segments, built on both social data and demographic data, allow for more accurate measurement of campaign KPIs.
 
-## Compiling
+Traditional customer relationship management focuses on collecting and managing static customer data, such as past purchase information, contact history and customer demographics. 
+This information is often sourced from email and phone interactions, commonly limited to direct interactions between the company and the customer.
+Social CRM adds a deeper layer of information onto traditional CRM by adding data derived from social networks like Facebook, Twitter, LinkedIn or any other social network where a user publicly shares information. 
+The key benefit of social CRM is the ability for companies to interact with customers in a multichannel retailing environment (commonly referred to as omnichannel) and talk to customers the way they talk to each other. 
+Social CRM enables companies to track a customer's social influence and source data from conversations occurring outside of formal, direct communication. 
+Social CRM also allows companies to keep a full audit history of all customer interactions, regardless of social channel they choose to use, available to all customer care employees.
 
-To compile source, follow this [instruction](https://helpcenter.onlyoffice.com/server/windows/community/compile-source-code.aspx).
+### Social CRM metrics in applications
 
-## Connecting your own modules
+Metrics for building awareness:
+* web traffic
+* search volume trends
+* volume of followers
+* social mentions
 
-You can now create your own modules and connect them to ONLYOFFICE Community Server. See [this repository](https://github.com/ONLYOFFICE/CommunityServer-CustomModules "https://github.com/ONLYOFFICE/CommunityServer-CustomModules") for more details.
+Metrics for increasing sales:
 
-## Project Information
+* website traffic
+* social mentions
+* volume of followers
+* repeat visits
+* social content acceptance rate
 
-Official website: [https://www.onlyoffice.com](https://www.onlyoffice.com?utm_source=github&utm_medium=cpc&utm_campaign=GitHubCS "http://www.onlyoffice.com?utm_source=github&utm_medium=cpc&utm_campaign=GitHubCS")
+Metrics for assessing changes environment in an industry:
+* Share of Voice (how much of the overall voice a single brand consumes)
 
-Code repository: [https://github.com/ONLYOFFICE/CommunityServer](https://github.com/ONLYOFFICE/CommunityServer "https://github.com/ONLYOFFICE/CommunityServer")
 
-Docker Image: [https://github.com/ONLYOFFICE/Docker-CommunityServer](https://github.com/ONLYOFFICE/Docker-CommunityServer "https://github.com/ONLYOFFICE/Docker-CommunityServer")
+### Screenshots
 
-License: [GNU GPL v3.0](https://www.gnu.org/copyleft/gpl.html "GNU GPL v3.0")
+![](docs/img/screenshoot1.png?raw=true)
 
-SaaS version: [https://www.onlyoffice.com/cloud-office.aspx](https://www.onlyoffice.com/cloud-office.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubCS "https://www.onlyoffice.com/cloud-office.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubCS")
 
-Enterprise version: [https://www.onlyoffice.com/enterprise-edition-free.aspx](https://www.onlyoffice.com/enterprise-edition-free.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubCS "https://www.onlyoffice.com/enterprise-edition-free.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubCS")
+## Philosophy
+* KISS by design and programming. An acronym for "keep it simple, stupid" or "keep it stupid simple", is a design principle. The KISS principle states that most systems work best if they are kept simple rather than made complicated; therefore, simplicity should be a key goal in design, and unnecessary complexity should be avoided. Variations on the phrase include: "Keep it simple, silly", "keep it short and simple", "keep it simple and straightforward", "keep it small and simple", or "keep it stupid simple".
 
-## ONLYOFFICE Community Edition
+* Select the best tools for the job, use tools that take less time to finish the job.
+* Productivity over complexity and avoid unnecessary complexity for elegant or beauty code.
 
-ONLYOFFICE Community Server is a part of **ONLYOFFICE Community Edition** that comprises also Document Server and Mail Server. To install ONLYOFFICE Community Edition, make use of the [Docker](https://www.onlyoffice.com/download.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubCS "https://www.onlyoffice.com/download.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubCS") with ONLYOFFICE Community Edition pre-installed.
+* Computers are machines, more powerful every year, give them hard work, concentrate on being productive.
 
-## ONLYOFFICE Enterprise Edition
+### Community 
 
-**ONLYOFFICE Enterprise Edition** is a scalable commercial build of the office suite comprising Community Server, Document Server and Mail Server.
+* [Website](https://javiercanon.github.io/Social-Office-SCRM/)
+* [Group - Community](https://www.facebook.com/groups/socialoffice/)
+* [Wiki](https://github.com/JavierCanon/Social-Office-SCRM/wiki)
+* [Issue - Bug Traking - Feature Request](https://github.com/JavierCanon/Social-Office-SCRM/issues)
 
-### Compare Community Edition and Enterprise Edition
+## Demo Installers 
 
-The table below will help you make the right choice.
+### Standalone Windows 10
 
-| Pricing and licensing | Community Edition | Enterprise Edition Start |
-| --------------------- | ----------------- | ------------------------ |
-| | [GET IT NOW](https://www.onlyoffice.com/download.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubCS) | [START FREE TRIAL](https://www.onlyoffice.com/enterprise-edition-free.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubCS) |
-| Cost | FREE | [Go to the pricing page](https://www.onlyoffice.com/enterprise-edition.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubCS) |
-| Simultaneous connections | up to 20 maximum | As in chosen pricing plan |
-| Number of users | up to 20 recommended | As in chosen pricing plan |
-| License | GNU AGPL v.3 | [Proprietary](https://help.onlyoffice.com/products/files/doceditor.aspx?fileid=4485697&doc=R29zSHZNRi9LYnRTb3JDditmVGpXQThVVXhMTWdja0xwemlYZXpiaDBYdz0_IjQ0ODU2OTci0) |
-| **Support** | **Community Edition** | **Enterprise Edition Start** |
-| Documentation | [Help center](https://helpcenter.onlyoffice.com/server/docker/opensource/index.aspx) | [Help center](https://helpcenter.onlyoffice.com/server/enterprise.aspx) |
-| Standard support | Forum or paid | One year support included |
-| Initial response time | 48 hours | 48 hours |
-| Premium support | [Buy now](https://www.onlyoffice.com/support.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubCS) | [Buy now](https://www.onlyoffice.com/support.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubCS) |
-| **System administration (Control Panel)** | **Community Edition** | **Enterprise Edition Start** |
-| White label | - | + |
-| Multitenancy | - | As in chosen pricing plan |
-| Data backup | - | + |
-| Data recovery | - | + |
-| Automatic updates | - | + |
-| Login history | - | + |
-| LDAP support (Active Directory) | - | + |
-| HTTPS, own domain | +(manual configuration) | + |
-| **Features** | **Community Edition** | **Enterprise Edition Start** |
-| Document editing | + | + |
-| Desktop applications | + | + |
-| Mobile applications | + | + |
-| Online document editors | + | + |
-| Co-editing, commenting | +(co-editing only) | + |
-| Document management | + | + |
-| Sharing, embedding | + | + |
-| Version control | + | + |
-| Reviewing | + | + |
-| Mail merge | + | + |
-| Third party service integration | + | + |
-| Project management | + | + |
-| Gantt chart | + | + |
-| Time management | + | + |
-| Reports | + | + |
-| CRM | + | + |
-| Invoicing system | + | + |
-| Mail server | + | + |
-| Mail aggregator | + | + |
-| Calendar | + | + |
-|  | [GET IT NOW](https://www.onlyoffice.com/download.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubCS) | [START FREE TRIAL](https://www.onlyoffice.com/enterprise-edition-free.aspx?utm_source=github&utm_medium=cpc&utm_campaign=GitHubCS) |
+For use only in one computer/machine.
+Minimum recommended standalone machine configuration:
+* Windows 10 64 bit.
+* 8 Gigas RAM.
+* [CPU Intel Core I3](https://www.intel.com/content/www/us/en/products/processors/core/i3-processors.html) or AMD equivalent.
+* 50 Gigas of free space.
 
-## User Feedback and Support
+![Attention](https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png)
+* Requires [.Net Framework 4.7.2](https://dotnet.microsoft.com/download/thank-you/net472). 
+* Requires [IIS 10 Express 64 bit](https://www.microsoft.com/en-us/download/details.aspx?id=48264). 
+* Requires [SQL Server 2017 Express](https://www.microsoft.com/en-us/download/details.aspx?id=55994) [1]. 
 
-If you have any problems with or questions about [ONLYOFFICE][2], please visit our official forum to find answers to your questions: [dev.onlyoffice.org][1] or you can ask and answer ONLYOFFICE development questions on [Stack Overflow][3].
+[1] Limitations : Microsoft SQL Server Express supports 1 physical processor, 1 GB memory, and 10 GB storage.
 
-  [1]: http://dev.onlyoffice.org
-  [2]: https://github.com/ONLYOFFICE
-  [3]: http://stackoverflow.com/questions/tagged/onlyoffice
+* [Download Standalone Windows 10 64x Installers](https://github.com/JavierCanon/Social-Office-SCRM/releases)
+
+### Windows Server 2012R2 and Up
+
+For multiuser, client/server using LAN network or Internet.
+Minimum recommended server machine configuration:
+* 8 Gigas RAM.
+* 4 CPU Cores in virtual servers.
+* CPU XEON or Intel Core I7 in dedicated servers.
+* 50 Gigas of free space.
+
+Minimum recommended clients machine configuration:
+* Windows 10 64 bit.
+* 8 Gigas RAM.
+* [CPU Intel Core I3](https://www.intel.com/content/www/us/en/products/processors/core/i3-processors.html) or AMD equivalent.
+* 50 Gigas of free space.
+
+![Attention](https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png)
+* Requires [.Net Framework 4.7.2](https://dotnet.microsoft.com/download/thank-you/net472). 
+* Requires IIS 10 enabled in server. 
+* Requires [SQL Server 2017 Web, Standard, Datacenter or Enterprise](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) [1]. 
+
+[1] [Compare SQL Server 2017 Editions](https://docs.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2017?view=sql-server-2017).
+
+* No downloads yet.
+
+## Getting Started
+
+### Prerequisites
+
+Things that you need to install the software and how to install them
+
+* Windows 10 64 bits (may works on 7.x and 8.x 64 bits but not tested).
+* .Net Framework 4.7.2.
+* Sql Server 2017 (any version).
+* IIS 10 (Internet Information Server).
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running
+
+Say what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo
+
+
+### Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+#### Coding Offical Reference
+
+1. [MSDN General Naming Conventions](http://msdn.microsoft.com/en-us/library/ms229045(v=vs.110).aspx)
+2. [DoFactory C# Coding Standards and Naming Conventions](http://www.dofactory.com/reference/csharp-coding-standards) 
+3. [MSDN Naming Guidelines](http://msdn.microsoft.com/en-us/library/xzf533w0%28v=vs.71%29.aspx)
+4. [MSDN Framework Design Guidelines](http://msdn.microsoft.com/en-us/library/ms229042.aspx)
+
+#### Model 
+[MVP](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter) 
+
+```
+First, anything that a user can interact with, or just be shown, is a view. The laws, behavior and characteristics of such a view is described by an interface. That interface can be implemented using a WinForms UI, a console UI, a web UI or even no UI at all (usually when testing a presenter) - the concrete implementation just doesn't matter as long as it obeys the laws of its view interface.
+
+Second, a view is always controlled by a presenter. The laws, behavior and characteristics of such a presenter is also described by an interface. That interface has no interest in the concrete view implementation as long as it obeys the laws of its view interface.
+
+Third, since a presenter controls its view, to minimize dependencies there's really no gain in having the view knowing anything at all about its presenter. There's an agreed contract between the presenter and the view and that's stated by the view interface.
+
+The implications of Third are:
+
+    The presenter doesn't have any methods that the view can call, but the view has events that the presenter can subscribe to.
+    The presenter knows its view. I prefer to accomplish this with constructor injection on the concrete presenter.
+    The view has no idea what presenter is controlling it; it'll just never be provided any presenter.
+
+```
+
+### Deployment
+
+Add additional notes about how to deploy this on a live system
+
+### Build Dependencies 
+
+* [Devexpress 18.2.3](https://go.devexpress.com/devexpressdownload_universaltrial.aspx)
+* [Cefsharp](https://github.com/cefsharp/CefSharp)
+* [SharkErrorReporter](https://github.com/JavierCanon/Shark.NET-Error-Reporter)
+
+## Authors 
+
+* Social Office by Javier Cañon [EN](https://www.javiercanon.com) [ES](https://www.javiercañon.com)
+* Used third party tools, propietary and open source.
+
+## Bugs 
+Please submit [bug reports](https://github.com/JavierCanon/Social-Office-SCRM/issues) or feature requests on GitHub.
+
+
+## Roadmap 
+
+* [Check this link](/ROADMAP.md)
+
+
+## Supported by, thanks to 
+
+* [Onlyoffice](https://www.onlyoffice.com/) 
+* [SplendidCRM](https://www.splendidcrm.com/) 
+--
+![Caphyon](https://raw.githubusercontent.com/JavierCanon/Social-Office-Browser/master/docs/img/advanced-installer-iconNavLogo.png)
+* [Caphyon Advanced Installer](https://www.advancedinstaller.com) 
+--
+![Softcanon](https://github.com/JavierCanon/Social-Office-Webackeitor/raw/master/docs/images/logo_softcanon_200x75.gif) 
+* [Softcanon](https://www.softcanon.com)
+--
+
+## License
+
+This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE Version 3 - see the [LICENSE.md](/LICENSE.md) file for details.
+
+---
+Made with ❤️ by **[Javier Cañon](https://www.javiercanon.com)**.

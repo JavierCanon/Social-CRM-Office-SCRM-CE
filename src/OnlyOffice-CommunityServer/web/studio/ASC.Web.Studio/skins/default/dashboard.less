@@ -1,0 +1,248 @@
+/*
+ *
+ * (c) Copyright Ascensio System Limited 2010-2020
+ *
+ * This program is freeware. You can redistribute it and/or modify it under the terms of the GNU 
+ * General Public License (GPL) version 3 as published by the Free Software Foundation (https://www.gnu.org/copyleft/gpl.html). 
+ * In accordance with Section 7(a) of the GNU GPL its Section 15 shall be amended to the effect that 
+ * Ascensio System SIA expressly excludes the warranty of non-infringement of any third-party rights.
+ *
+ * THIS PROGRAM IS DISTRIBUTED WITHOUT ANY WARRANTY; WITHOUT EVEN THE IMPLIED WARRANTY OF MERCHANTABILITY OR
+ * FITNESS FOR A PARTICULAR PURPOSE. For more details, see GNU GPL at https://www.gnu.org/copyleft/gpl.html
+ *
+ * You can contact Ascensio System SIA by email at sales@onlyoffice.com
+ *
+ * The interactive user interfaces in modified source and object code versions of ONLYOFFICE must display 
+ * Appropriate Legal Notices, as required under Section 5 of the GNU GPL version 3.
+ *
+ * Pursuant to Section 7 § 3(b) of the GNU GPL you must retain the original ONLYOFFICE logo which contains 
+ * relevant author attributions when distributing the software. If the display of the logo in its graphic 
+ * form is not reasonably feasible for technical reasons, you must include the words "Powered by ONLYOFFICE" 
+ * in every copy of the program you distribute. 
+ * Pursuant to Section 7 § 3(e) we decline to grant you any rights under trademark law for use of our trademarks.
+ *
+*/
+
+
+/*************************************************************
+    DashBoard Community & Projects
+*************************************************************/
+@padding-clm: 30px;
+
+.dashboard-box(@width-clm, @count-clm) {
+    @width: (@width-clm + @padding-clm) * @count-clm + @padding-clm;
+    background-color: #FFF;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    z-index: 1050;
+    width: @width;
+    margin-left: -@width/2;
+
+    &.static {
+        position: static;
+        margin-left: 0;
+    }
+
+    .content {
+        display: inline-block;
+        padding: @padding-clm;
+
+        .module-block {
+            float: left;
+            margin-left: @padding-clm;
+            text-align: center;
+            width: @width-clm;
+
+            &:first-child {
+                 margin-left: 0;
+            }
+        }
+    }
+}
+
+.backdrop
+{
+    background-color: #000;
+    bottom: 0;
+    filter: alpha(opacity=80);
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1040;
+}
+
+.dashboard-center-box {
+    &.crm {
+        .dashboard-box(215px, 4);
+    }
+
+    &.projects {
+        .dashboard-box(171px, 5);
+    }
+
+    &.community {
+        .dashboard-box(210px, 4);
+    }
+
+    &.mail {
+        &.for-admin
+        {
+            .dashboard-box(260px, 4);
+        }
+        &.for-user
+        {
+            .dashboard-box(260px, 3);
+        }
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .dashboard-center-box {
+        &.crm {
+            .dashboard-box(205px, 4);
+        }
+        &.projects {
+            .dashboard-box(155px, 5);
+        }
+        &.community {
+            .dashboard-box(200px, 4);
+        }
+        &.mail {
+            .dashboard-box(260px, 4);
+        }
+    }
+}
+@media screen and (min-height: 768px) {
+
+}
+
+
+.dashboard-center-box .header {
+    background-color: #4192B8;
+    background-repeat: repeat-x;
+    color: #fff;
+    font-size: 43px;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-align: center;
+    text-shadow: #174B63 1px 1px 1px;
+    -webkit-text-shadow: #174B63 1px 1px 1px;
+
+    .close {
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        font-size: 32px;
+        font-weight: 500;
+        height: 16px;
+        line-height: 16px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        vertical-align: middle;
+        width: 16px;
+    }
+}
+
+ @media all and (max-width: 1200px) {
+    .dashboard-center-box .header {
+        font-size: 38px;
+    }
+}
+
+.dashboard-center-box .content .module-block {
+    .img {
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: block;
+        margin: 0 auto;
+        width: 135px;
+        height: 135px;
+    }
+
+    .title {
+        font-size: 24px;
+        height: 80px;
+        padding-bottom: 10px;
+        display: table-cell;
+        vertical-align: middle;
+        width: inherit;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            background: url('imagescss/markers.gif') left 4px no-repeat;
+            list-style-type: none;
+            margin: 0;
+            padding: 0 0 14px 20px;
+            text-align: left;
+        }
+    }
+
+    a.link {
+        font-size: 16px;
+    }
+}
+
+
+.dashboard-center-box .dashboard-buttons {
+    margin-bottom: 30px;
+    text-align: center;
+
+    .create-button {
+        display: inline-block;
+        font-size: 18px;
+    }
+}
+
+.dashboard-center-box.community {
+    .content .module-block {
+        .img.users {
+            background-image: url("images/icon-employees.png");
+        }
+
+        .img.events {
+            background-image: url("images/icon-events.png");
+        }
+
+        .img.blogs {
+            background-image: url("images/icon-blogs.png");
+        }
+
+        .img.bookmarks {
+            background-image: url("images/icon-bookmarks.png");
+        }
+
+        .img.helpcenter {
+            background-image: url("images/icon-helpcenter.png");
+        }
+    }
+}
+
+.dashboard-center-box.crm {
+    .content .module-block {
+        .img.contacts {
+            background-image: url("images/contacts.png");
+        }
+        .img.sales {
+            background-image: url("images/sales.png");
+        }
+        .img.customize {
+            background-image: url("images/customize.png");
+        }
+        .img.integration {
+            background-image: url("images/integration.png");
+        }
+        .img.invoice {
+            background-image: url("images/invoice.png");
+        }
+    }
+}

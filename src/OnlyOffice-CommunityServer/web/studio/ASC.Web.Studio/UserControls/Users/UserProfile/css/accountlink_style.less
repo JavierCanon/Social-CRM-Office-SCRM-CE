@@ -1,0 +1,117 @@
+/*
+ *
+ * (c) Copyright Ascensio System Limited 2010-2020
+ *
+ * This program is freeware. You can redistribute it and/or modify it under the terms of the GNU 
+ * General Public License (GPL) version 3 as published by the Free Software Foundation (https://www.gnu.org/copyleft/gpl.html). 
+ * In accordance with Section 7(a) of the GNU GPL its Section 15 shall be amended to the effect that 
+ * Ascensio System SIA expressly excludes the warranty of non-infringement of any third-party rights.
+ *
+ * THIS PROGRAM IS DISTRIBUTED WITHOUT ANY WARRANTY; WITHOUT EVEN THE IMPLIED WARRANTY OF MERCHANTABILITY OR
+ * FITNESS FOR A PARTICULAR PURPOSE. For more details, see GNU GPL at https://www.gnu.org/copyleft/gpl.html
+ *
+ * You can contact Ascensio System SIA by email at sales@onlyoffice.com
+ *
+ * The interactive user interfaces in modified source and object code versions of ONLYOFFICE must display 
+ * Appropriate Legal Notices, as required under Section 5 of the GNU GPL version 3.
+ *
+ * Pursuant to Section 7 § 3(b) of the GNU GPL you must retain the original ONLYOFFICE logo which contains 
+ * relevant author attributions when distributing the software. If the display of the logo in its graphic 
+ * form is not reasonably feasible for technical reasons, you must include the words "Powered by ONLYOFFICE" 
+ * in every copy of the program you distribute. 
+ * Pursuant to Section 7 § 3(e) we decline to grant you any rights under trademark law for use of our trademarks.
+ *
+*/
+
+
+@imagepathlink:'/UserControls/Users/UserProfile/css/images/';
+
+.account-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#social {
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 16px;
+    text-align: left;
+
+    .account-links li {
+        margin-right: 8px;
+
+        a {
+            border-radius: 2px;
+            box-shadow: 0 2px 2px #c4c9cc;
+            display: inline-block;
+            height: 31px;
+            padding: 0px 8px 0 8px;
+            text-decoration: none;
+
+            &:hover {
+                box-shadow: 0 2px 2px #a5acb0;
+            }
+
+            &.disabled {
+                opacity: 0.5;
+                cursor: default;
+            }
+        }
+
+        .icon {
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: block;
+            height: 18px;
+            margin: 8px 2px 0px 2px;
+            width: 18px;
+        }
+
+        .google {
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
+
+            .icon {
+                /*background-image: url("images/google.svg");*/
+                background-image: url("../../../../skins/default/images/svg/people/google.png");
+                background-size: auto;
+                height: 34px;
+                margin: 0;
+                width: 105px;
+            }
+        }
+
+        .facebook .icon {
+            background-image: url("images/facebook.svg");
+        }
+
+        .linkedin .icon {
+            background-image: url("images/linkenin.svg");
+        }
+
+        .twitter .icon {
+            background-image: url("images/twitter.svg");
+        }
+
+        .mailru .icon {
+            background-image: url("images/mailru.svg");
+            width: 80px;
+        }
+
+        .yandex .icon {
+            background-image: url("images/yandex.svg");
+        }
+
+        .vk .icon {
+            background-image: url("images/vk.svg");
+        }
+
+        .gosuslugi .icon {
+            background-image: url("images/gosuslugi.svg");
+            width: 80px;
+        }
+    }
+}

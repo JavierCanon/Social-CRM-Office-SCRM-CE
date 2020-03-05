@@ -1,0 +1,272 @@
+/*
+ *
+ * (c) Copyright Ascensio System Limited 2010-2020
+ *
+ * This program is freeware. You can redistribute it and/or modify it under the terms of the GNU 
+ * General Public License (GPL) version 3 as published by the Free Software Foundation (https://www.gnu.org/copyleft/gpl.html). 
+ * In accordance with Section 7(a) of the GNU GPL its Section 15 shall be amended to the effect that 
+ * Ascensio System SIA expressly excludes the warranty of non-infringement of any third-party rights.
+ *
+ * THIS PROGRAM IS DISTRIBUTED WITHOUT ANY WARRANTY; WITHOUT EVEN THE IMPLIED WARRANTY OF MERCHANTABILITY OR
+ * FITNESS FOR A PARTICULAR PURPOSE. For more details, see GNU GPL at https://www.gnu.org/copyleft/gpl.html
+ *
+ * You can contact Ascensio System SIA by email at sales@onlyoffice.com
+ *
+ * The interactive user interfaces in modified source and object code versions of ONLYOFFICE must display 
+ * Appropriate Legal Notices, as required under Section 5 of the GNU GPL version 3.
+ *
+ * Pursuant to Section 7 § 3(b) of the GNU GPL you must retain the original ONLYOFFICE logo which contains 
+ * relevant author attributions when distributing the software. If the display of the logo in its graphic 
+ * form is not reasonably feasible for technical reasons, you must include the words "Powered by ONLYOFFICE" 
+ * in every copy of the program you distribute. 
+ * Pursuant to Section 7 § 3(e) we decline to grant you any rights under trademark law for use of our trademarks.
+ *
+*/
+
+
+.confirmBlock {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+
+    &.confirm-personal {
+        text-align: center;
+
+		.confirm-block-title{
+			margin: 0!important;
+		}
+        .default-personal-popup_h {
+            font-size: 29px;
+            font-weight: normal;
+            margin: 0;
+            //text-transform: uppercase;
+        }
+
+        .default-personal-popup_line {
+			display: none;
+           /* background-color: #86d6f6;
+            display: inline-block;
+            height: 72px;
+            width: 1px;
+            margin-bottom: 18px;*/
+        }
+
+        .default-personal-popup_text {
+            font-size: 18px;
+			margin-bottom: 40px;
+			margin-top: 34px;
+        }
+
+        .rightPart {
+            float: none;
+            margin: 0 auto;
+            width: 360px;
+
+            .property {
+                margin-bottom: 36px;
+
+                .name {
+                    display: block;
+					margin-top: 28px;
+					margin-left: 5px;
+					font-size: 18px;
+					width: 93px;
+					color: #bdbdbd;
+					font-weight: 400;
+                }
+
+                .value {
+                    display: block;
+                    width: 350px;
+                    text-align: left;
+                }
+
+                .textEdit {
+                    border: none;
+					border-bottom: 2px solid #bdbdbd;
+					border-radius: 0;
+					width: 100%;
+					margin-top: 4px;
+					font-size: 14px;
+                    &:focus {
+                        border-color: #2d86ab;
+                    }
+
+                    &.with-error {
+                        border-color: #c44747;
+                    }
+                }
+            }
+        }
+
+        .big-button-container {
+            margin: 59px auto 120px;
+			width: 355px;
+        }
+
+        .HelpCenterSwitcher {
+            display: none;
+        }
+
+        #buttonConfirmInvite {
+            background-color: #f16240;
+			background-image: none;
+			border: none;
+			color: white;
+			cursor: pointer;
+			font-size: 18px;
+			font-weight: 600;
+			padding: 17px 42px;
+			margin: 0;
+			text-align: center;
+			width: 267px;
+   
+            .borderRadius();
+
+            &:hover {
+                background-color: #fd6a46;
+            }
+
+            &:active {
+                background-color: #e65836;
+            }
+        }
+
+        .auth-docs_social_text {
+            font-size: 21px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.confirm-block-title .subTitle {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.confirmBlock .leftPart {
+    margin-right: 330px;
+    padding-top: 20px;
+
+    .portalInfo {
+        padding: 20px;
+        min-height: 150px;
+
+        .user {
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            padding-top: 15px;
+            margin-top: 15px;
+            overflow: auto;
+        }
+
+        .avatar {
+            float: left;
+        }
+
+        .name {
+            float: left;
+            margin-left: 10px;
+
+            .header-base-small {
+                font-size: 16px;
+                font-weight: normal;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .description {
+        font-size: 14px;
+        margin-top: 30px;
+        padding-left: 20px;
+        line-height: 18px;
+    }
+}
+
+.confirmBlock .rightPart {
+    width: 260px;
+    float: right;
+    text-align: left;
+    padding-top: 2px;
+
+    .property {
+        margin-bottom: 10px;
+
+        .name {
+            margin-bottom: 3px;
+            font-weight: bolder;
+        }
+
+        .textEdit {
+            width: 250px;
+            padding: 3px;
+        }
+    }
+
+    .errorText {
+        line-height: 12px;
+        position:absolute;
+        top: -37px;
+    }
+
+    .button.huge {
+        width: 198px;
+    }
+}
+
+
+.borderRadius (@value: 3px) {
+    border-radius: @value;
+    -moz-border-radius: @value;
+    -webkit-border-radius: @value;
+}
+
+@media screen and (max-width: 900px){
+	#studioPageContent{
+		min-width: auto;
+
+		.mainPageLayout{
+			min-width: auto;
+			padding: 24px 0 0;
+
+			.confirmBlock{
+				width: auto;
+
+			}
+			.confirmBlock.confirm-personal .rightPart{
+				float: none;
+				margin: 0 auto;
+				width: 320px;
+			}
+			.confirmBlock.confirm-personal .rightPart .property{
+				margin-bottom: 36px;
+				display: block;
+				position: relative;
+				width: 300px;
+				margin: 0 auto;
+				
+				.value{
+					display: block;
+					width: auto;
+					text-align: left;
+				}
+				.textEdit{
+					width: 300px;
+					margin-top: 4px;
+					padding-left: 0;
+					padding-right: 0;
+				}
+			}
+			.confirmBlock.confirm-personal .big-button-container{
+				margin: 59px auto 120px;
+				width: 300px;
+			}
+			.confirmBlock.confirm-personal #buttonConfirmInvite{
+				width: 215px;
+			}
+		}
+	}
+}

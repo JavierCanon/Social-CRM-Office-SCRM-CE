@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xml>
+	<Version>
+		<Build>2.0.2927.27273</Build>
+		<Date>01/06/2008</Date>
+		<Description>SplendidCRM Open-Source Version 2.0.2927.27273 Beta (73M)</Description>
+		<URL>http://www.splendidcrm.com/LinkClick.aspx?link=http%3a%2f%2fdownload.splendidcrm.com%2fSplendidCRM_2.0.2927.27273_Beta_Upgrade.msi&amp;tabid=101&amp;mid=497</URL>
+	</Version>
+	<Version>
+		<Build>1.4.2774.40222</Build>
+		<Date>08/06/2007</Date>
+		<Description>SplendidCRM Open-Source Version 1.4.2774.40222 Upgrade (14M)</Description>
+		<URL>http://www.splendidcrm.com/LinkClick.aspx?link=http%3a%2f%2fs3.amazonaws.com%2fSplendidCRM%2fSplendidCRM_1.4.2774.40222_Upgrade.msi&amp;tabid=101&amp;mid=465</URL>
+	</Version>
+</xml>

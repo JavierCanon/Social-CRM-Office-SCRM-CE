@@ -1,1 +1,0 @@
-etc/nginx/sites-available/{{package_sysname}} etc/nginx/sites-enabled/{{package_sysname}}

@@ -1,0 +1,235 @@
+/**********************************************************************************************************************
+ * The contents of this file are subject to the SugarCRM Public License Version 1.1.3 ("License"); You may not use this
+ * file except in compliance with the License. You may obtain a copy of the License at http://www.sugarcrm.com/SPL
+ * Software distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either
+ * express or implied.  See the License for the specific language governing rights and limitations under the License.
+ *
+ * All copies of the Covered Code must include on each user interface screen:
+ *    (i) the "Powered by SugarCRM" logo and
+ *    (ii) the SugarCRM copyright notice
+ *    (iii) the SplendidCRM copyright notice
+ * in the same form as they appear in the distribution.  See full license for requirements.
+ *
+ * The Original Code is: SplendidCRM Open Source
+ * The Initial Developer of the Original Code is SplendidCRM Software, Inc.
+ * Portions created by SplendidCRM Software are Copyright (C) 2005 SplendidCRM Software, Inc. All Rights Reserved.
+ * Contributor(s): ______________________________________.
+ *********************************************************************************************************************/
+
+/* 01/02/2006 Paul.  IE is unstable and freezes often on MOBILE3.  Disable behaviors to see if they are the source of the problem. */
+/*
+img
+{
+	behavior: url(null);
+}
+*/
+.checkbox INPUT, .radio INPUT
+{
+	border:0px;
+	background-color: transparent;
+	margin: 0px;
+	vertical-align: bottom;
+}
+
+.listViewThS1 a:link, .listViewThS1 a:visited
+{
+	color: #33485c;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.listViewTdLinkS1:link, a.listViewTdLinkS1:visited
+{
+	font-size: 12px;
+	color: #002780;
+	text-decoration: none;
+}
+
+.listViewThS1 a:hover
+{
+	color: #222222;
+	text-decoration: none;
+}
+
+
+.evenListRowS1
+{
+	font-size: 12px;
+	color: #000000;
+	background-color: #f1f1f1;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 4px;
+	padding-top: 2px;
+}
+	
+.evenListRowS1 td
+{
+	font-size: 12px;
+	color: #000000;
+	background-color: #f1f1f1;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 4px;
+	padding-top: 2px;
+	border-bottom: 1px solid #cccccc;
+}
+
+.oddListRowS1
+{
+	font-size: 12px;
+	color: #000000;
+	background-color: #fdfdfd;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 4px;
+	padding-top: 2px;
+}
+
+.oddListRowS1 td
+{
+	font-size: 12px;
+	color: #000000;
+	background-color: #fdfdfd;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 4px;
+	padding-top: 2px;
+	border-bottom: 1px solid #cccccc;
+}
+
+.listViewPaginationTdS1 td
+{
+	font-size: 10px;
+	color: #999999;
+	background-color: #eeeeee;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #b0cbe2;
+}
+
+.listViewPaginationTdS1 a:link, .listViewPaginationTdS1 a:visited
+{
+	color: #E90000;
+	font-size: 10px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a.subMenuLink:link, a.subMenuLink:visited
+{
+	text-decoration: none;
+}
+
+a.currentTab:link, a.currentTab:visited
+{
+	text-decoration: none;
+}
+
+a.otherTab:link, a.otherTab:visited
+{
+	text-decoration: none;
+}
+
+.hidden-button
+{
+	border: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: white;
+	width: 1px;
+	height: 1px;
+}
+
+.modtitle  { font-family:arial,sans-serif; font-weight:bold; font-size:12pt; color:#000000 }
+.itemtitle { font-family:arial,sans-serif; font-weight:bold; font-size:10pt; color:#000000 }
+.itemdate  { font-family:arial,sans-serif; font-weight:normal; font-size:8pt; color:#999999 }
+.itemdesc  { font-family:times,serif; font-weight:normal; font-size:10pt; color:#000000 }
+
+.subMenuTDMouseOver {
+	font-size: 11px;
+	color: #ffffff;
+	background-color: #ffffff;
+	padding: 3px;
+	border-top: 1px solid #fafafa;
+	border-bottom: 1px solid #cccccc;
+	}
+
+tr.tabHeight
+{
+	height: 25px;
+}
+img.tabSeparator
+{
+	width: 0px;
+	height: 0px;
+}
+img.tabLeft
+{
+	width: 5px;
+	height: 25px;
+}
+img.tabRight
+{
+	width: 2px;
+	height: 1px;
+}
+.button-panel
+{
+	margin-bottom: 2px;
+}
+
+/* 12/01/2007 Paul.  Something in Sugar's code is hiding the calendar. */
+.Calendar
+{
+	display: inline;
+}
+
+.button-panel
+{
+	margin-bottom: 2px;
+}
+
+table.tabEditView
+{
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+}
+table.tabEditView td
+{
+	border: inherit;
+}
+table.tabEditView th
+{
+	margin-top: 0;
+	padding-left: 0;
+	padding-top: 0;
+	text-align: left;
+}
+table.tabDetailView
+{
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+}
+table.tabSearchView
+{
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+}
+table.tabDetailView2
+{
+	width: 100%;
+	border-collapse: collapse;
+}
+.emptyTabSpace
+{
+	background-image: url(images/emptyTabSpace.gif);
+}
+.moduleTab_middle
+{
+	background-image: url(images/moduleTab_middle.gif);
+}

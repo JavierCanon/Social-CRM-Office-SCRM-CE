@@ -1,0 +1,88 @@
+body
+{
+	margin: 0px 0px 0px 0px;
+}
+form
+{
+	margin: 0px;
+}
+h3
+{
+	float: left;
+}
+.h3Row
+{
+	border-color: #999999;
+	background-image: url(images/bgGray.gif);
+}
+.evenListRowS1
+{
+	border-bottom: solid 1px #f6f6f6;
+}
+.oddListRowS1
+{
+	border-bottom: solid 1px #f6f6f6;
+	background: #f6f6f6;
+}
+.required
+{
+	color: #ff0000;
+}
+.error
+{
+	color: #ff0000;
+}
+.checkbox,.radio
+{
+	border:0px;
+	background-color: transparent;
+	margin: 0px;
+	vertical-align: bottom;
+}
+a.listViewTdToolsS1:link, a.listViewTdToolsS1:visited
+{
+	text-decoration: none;
+}
+a.listViewTdToolsS1:hover
+{
+	text-decoration: none;
+}
+a.tabDetailViewDFLink:link, a.tabDetailViewDFLink:visited
+{
+	text-decoration: underline;
+}
+a.tabDetailViewDFLink:hover
+{
+}
+.dataLabel
+{
+	text-align: left;
+	font-weight: normal;
+}
+.dataField
+{
+	font-weight: normal;
+}
+.listViewPaginationTdS1 .tabDetailViewDL
+{
+	border: none; 
+	vertical-align: top;
+}
+.tabDetailViewDL
+{
+	vertical-align: top;
+	text-align: right;
+	border-bottom: 1px solid;
+}
+.tabDetailViewDF
+{
+	border-bottom: 1px solid;
+	vertical-align: top;
+}
+a.tabDetailViewDFLink:link, a.tabDetailViewDFLink:visited
+{
+	text-decoration: underline;
+}
+a.tabDetailViewDFLink:hover
+{
+}

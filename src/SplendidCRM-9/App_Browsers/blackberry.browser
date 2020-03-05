@@ -1,0 +1,23 @@
+<browsers>
+  <!-- sample UA "BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/123" -->
+  <!-- http://na.blackberry.com/eng/developers/resources/journals/mar_2007/profile.jsp -->
+  <!-- http://www.codeproject.com/KB/aspnet/BlackberryASPNET.aspx -->
+  <browser id="BlackBerry" parentID="Default">
+    <identification>
+      <userAgent match="BlackBerry(?'model'\d+)/(?'version'((?'major'\d+).(?'minor'\d+).(?'other'\d+)))" />
+    </identification>
+
+    <capabilities>
+      <capability name="browser"             value="BlackBerry" />
+      <capability name="isMobileDevice"      value="true" />
+      <capability name="javascript"          value="true" />
+      <capability name="ecmascriptversion"   value="1.3" />
+      <capability name="version"             value="${version}" />
+      <capability name="majorVersion"        value="${major}" />
+      <capability name="minorVersion"        value="${minor}" />
+      <capability name="supportsCss"         value="true" />
+      <capability name="frames"              value="false" />
+      <capability name="cookies"             value="true" />
+    </capabilities>
+  </browser>
+</browsers>

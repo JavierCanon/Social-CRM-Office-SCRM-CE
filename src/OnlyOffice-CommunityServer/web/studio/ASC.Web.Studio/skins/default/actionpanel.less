@@ -1,0 +1,286 @@
+/*
+ *
+ * (c) Copyright Ascensio System Limited 2010-2020
+ *
+ * This program is freeware. You can redistribute it and/or modify it under the terms of the GNU 
+ * General Public License (GPL) version 3 as published by the Free Software Foundation (https://www.gnu.org/copyleft/gpl.html). 
+ * In accordance with Section 7(a) of the GNU GPL its Section 15 shall be amended to the effect that 
+ * Ascensio System SIA expressly excludes the warranty of non-infringement of any third-party rights.
+ *
+ * THIS PROGRAM IS DISTRIBUTED WITHOUT ANY WARRANTY; WITHOUT EVEN THE IMPLIED WARRANTY OF MERCHANTABILITY OR
+ * FITNESS FOR A PARTICULAR PURPOSE. For more details, see GNU GPL at https://www.gnu.org/copyleft/gpl.html
+ *
+ * You can contact Ascensio System SIA by email at sales@onlyoffice.com
+ *
+ * The interactive user interfaces in modified source and object code versions of ONLYOFFICE must display 
+ * Appropriate Legal Notices, as required under Section 5 of the GNU GPL version 3.
+ *
+ * Pursuant to Section 7 § 3(b) of the GNU GPL you must retain the original ONLYOFFICE logo which contains 
+ * relevant author attributions when distributing the software. If the display of the logo in its graphic 
+ * form is not reasonably feasible for technical reasons, you must include the words "Powered by ONLYOFFICE" 
+ * in every copy of the program you distribute. 
+ * Pursuant to Section 7 § 3(e) we decline to grant you any rights under trademark law for use of our trademarks.
+ *
+*/
+
+
+/*******************************************************************************
+  Dropdown action panel
+*******************************************************************************/
+.studio-action-panel.community {
+    box-sizing: border-box;
+    width: 240px;
+}
+.studio-action-panel {
+    display: none;
+    position: absolute;
+    padding: 4px;
+    z-index: 1999;
+    .borderRadius(4px);
+    .boxShadow();
+
+    .corner-top,
+    .corner-bottom {
+        width: 7px;
+        height: 6px;
+        position: absolute;
+
+        &.left {
+            left: 16px;
+        }
+
+        &.right {
+            right: 16px;
+            left: auto;
+        }
+    }
+
+    .corner-top {
+        background: url("../default/images/dropdown-corner-top.gif") no-repeat transparent;
+        top: -5px;
+    }
+
+    .corner-bottom {
+        background: url("../default/images/dropdown-corner-bottom.gif") no-repeat transparent;
+        bottom: -6px;
+    }
+
+    .dropdown-content {
+        list-style: none outside none;
+        margin: 0;
+        max-height: 400px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 0;
+
+        li {
+            max-width: 375px;
+            overflow: hidden;
+            .textOverflowEllipsis();
+            margin-bottom: 1px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &.dropdown-item-seporator {
+                margin: 8px 0;
+                height: 0;
+            }
+        }
+
+        .dropdown-item,
+        .dropdown-item a {
+            background: none;
+            border: 0;
+            color: @textColor;
+            cursor: pointer;
+            display: block;
+            font-size: 12px;
+            line-height: 24px;
+            margin: 0;
+            padding: 0 12px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .dropdown-item {
+            &.active {
+                color: @linkColor;
+            }
+
+            &.disable {
+                color: @textColorGrayLight;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            &:hover,
+            &:hover a {
+                text-decoration: none;
+                background-color: #e9e9e9;
+                .borderRadius(2px);
+            }
+        }
+
+        .dropdown-with-item {
+            padding-right: 20px;
+            position: relative;
+
+            &:after {
+                content: "\203A";
+                display: block;
+                font-size: 20px;
+                height: 14px;
+                right: 0;
+                position: absolute;
+                top: -2px;
+                width: 12px;
+            }
+        }
+
+        .menu-row {
+            border-bottom: 1px solid @borderColor;
+            cursor: pointer;
+            list-style: none outside none;
+            outline: none;
+            padding: 6px 0 5px;
+            z-index: 100;
+
+            &:hover {
+                background-color: @hoverTable;
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            a,
+            span,
+            div,
+            input {
+                outline: none;
+            }
+        }
+    }
+    /*******************************************************************************
+   Icons for the moduls list
+*******************************************************************************/
+    &.modules li {
+
+        .dropdown-item-svg{
+            width: 16px;
+            height: 16px;
+            fill:#83888d;
+         }
+
+        .dropdown-item-icon {
+            width: 16px;
+            height: 16px;
+            margin: 8px 5px 0 1px;
+            float: left;
+        } 
+    }
+}
+
+#studio_productListPopupPanel {
+    z-index: 2000;
+
+    .wrapper
+    {
+        position: relative;
+        width: 150px;
+        max-height: 430px;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        &.col2
+        {
+            width: 310px;
+            .columns
+            {
+                -moz-column-count: 2;
+                -webkit-column-count: 2;
+                column-count: 2;
+            }
+        }
+
+        &.col3
+        {
+            width: 450px;
+
+            .columns
+            {
+                -moz-column-count: 3;
+                -webkit-column-count: 3;
+                column-count: 3;
+            }
+        }
+    }
+
+    .columns
+    {
+        position: relative;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+        -moz-column-gap: 0;
+        -webkit-column-gap: 0;
+        column-gap: 0;
+    }
+
+    .tile
+    {
+        position: relative;
+        width: 155px;
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        column-break-inside: avoid;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        display: table;
+
+        .dropdown-content {
+            max-height: none;
+        }
+    }
+}
+
+.create-new-link-list {
+    list-style: none outside none;
+    padding: 0;
+}
+
+.dropdown-item-seporator {
+    border-top: 1px dotted #a6a6a6;
+    width: 100%;
+    margin: 2px 0;
+}
+
+.create-new-list-header {
+    line-height: 32px;
+    padding:0 12px;
+    text-transform: uppercase;
+}
+
+/*Edge hack bug 37123*/
+@supports (-ms-ime-align:auto) {
+    .studio-action-panel .dropdown-content li,
+    .studio-action-panel .dropdown-content li {
+        text-overflow: initial;
+        -o-text-overflow: initial;
+        -moz-text-overflow: initial;
+        -webkit-text-overflow: initial;
+    }
+
+    .studio-action-panel .dropdown-content .dropdown-item,
+    .studio-action-panel .dropdown-content .dropdown-item a {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
